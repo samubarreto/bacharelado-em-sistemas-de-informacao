@@ -1,0 +1,1 @@
+exemplo = input('String: '); print(exemplo[::-1])
