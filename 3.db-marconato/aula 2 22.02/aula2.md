@@ -1,4 +1,4 @@
-## MER - Modelo entidade relacionamento composto por:
+## "MER - Modelo entidade relacionamento composto por:
 
 - **Entidades** (tabelas, todas precisam de um pk) representado por **RETÂNGULO:**
 
