@@ -1,18 +1,27 @@
 #include <stdio.h>
-// altera os valores de a e b (variáveis por referência)
+// altera os valores de a e b (variaveis por referencia)
 
-troca(int *a, int *b) {
+trocaReferencia (int *a, int *b) {
 	int aux;
 	aux = *a;
 	*a = *b;
 	*b = aux;
 };
 
-main()
-{
-	int x = 5, y = 10;
-	printf ("X = %d e Y = %d", x, y);
-	troca (&x, &y);   // endereço de x e de y
-	printf ("X = %d e Y = %d", x,y);
-}
+// passando varivaeis por valor
 
+int trocaValor (int a, int b) {
+	int res[2];
+	res[0] = b;
+	res[1] = a;
+	return res;
+};
+
+main () {
+	int x = 5, y = 10; a; b;
+	printf ("X = %d e Y = %d\n", x, y);
+	trocaValor(x, y);
+	printf ("X = %d e Y = %d\n", a, b);
+	trocaReferencia(&x, &y);
+	printf ("X = %d e Y = %d\n", x, y);
+};
