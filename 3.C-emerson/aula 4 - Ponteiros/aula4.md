@@ -18,7 +18,7 @@
 
 > Exemplo:
 
-```
+```cpp
 #include <stdio.h>
 #include <conio.h>
 

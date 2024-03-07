@@ -71,3 +71,4 @@ b) Vários alunos participam de várias disciplinas
 c) Vários colaboradores trabalham em um departamento
 
 d) Um país é formado por várias unidades federativas e vários municípios pertencem a uma unidade federativa
+![1709765816173](image/aula3/1709765816173.png)
