@@ -26,6 +26,8 @@ public class RA638217_av_01 {
       }
     }
 
+    input.close();
+
     for (int i = 0; i < 5; i++) {
       for (int j = 0; j < 5; j++) {
         if ((A[i][j] % 2 == 0 && x % 2 == 0) || (A[i][j] % 2 != 0 && x % 2 != 0)) {
@@ -36,6 +38,14 @@ public class RA638217_av_01 {
       }
     }
 
-    input.close();
+    System.out.println("Matriz B:");
+    for (int i = 0; i < 5; i++) {
+      for (int j = 0; j < 5; j++) {
+        System.out.printf(B[i][j] + " ");
+      }
+      System.out.println();
+    }
+    System.out.println();
+
   }
 }
