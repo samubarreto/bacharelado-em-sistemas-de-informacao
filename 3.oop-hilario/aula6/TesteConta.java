@@ -1,4 +1,4 @@
-public class testaConta {
+public class TesteConta {
   public static void main(String[] args) {
     Conta conta = new Conta("1234", 100);
     conta.nro = "4321";

@@ -1,5 +1,10 @@
 ## 20/03/2024
 
+javac NomeDoArquivo.java
+
+java NomeDoArquivo.java
+
+
 **Aula 6:**
 
 **Orientação a objeto POO:**

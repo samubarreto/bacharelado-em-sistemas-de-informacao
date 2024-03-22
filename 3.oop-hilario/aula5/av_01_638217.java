@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class RA638217_av_01 {
+public class av_01_638217 {
   public static void main(String[] args) {
     int A[][] = new int[5][5];
     int B[][] = new int[5][5];
