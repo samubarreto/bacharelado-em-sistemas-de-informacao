@@ -15,8 +15,6 @@
   * Baixa curva de aprendizado para usar o app
   * Alta compatibilidade com diferentes sistemas operacionais e plataformas
   * Código limpo e de fácil manutenção e melhoria
-* Product Vision Box:
-  * ![1711489144361](image/AdotaMais/1711489144361.jpg)
 
 ###### Aplicativos parecidos já existentes
 
@@ -28,6 +26,10 @@
   * Problema que resolve: Necessidade de ir presencialmente em um local para encontrar pets para adoção;
   * Principal benefício: Facilitar o encontro entre adotantes e pets;
   * Como se destaca dos concorrentes: Com o Tiutiu Tok, um tiktok para buscar os pets, de fácil uso para a maioria das pessoas.
+
+###### Product Vision Box da Adota+
+
+![1711489144361](https://github.com/samubarreto/information-systems-degree/blob/main/3.engSoftware-nelso/aula7/adotamais.jpg?raw=true)
 
 ###### Grupo
 
