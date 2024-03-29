@@ -3,9 +3,12 @@ USE aula7;
 
 CREATE TABLE departamento (
 	codigo INT UNSIGNED NOT NULL,
-    departamento VARCHAR(50) NOT NULL,
+    descricao VARCHAR(50) NOT NULL,
     CONSTRAINT PK_departmento PRIMARY KEY (codigo)
 );
+
+ALTER TABLE departamento
+CHANGE departamento descricao VARCHAR(50) NOT NULL;
 
 CREATE TABLE funcionario (
 	id INT NOT NULL,
@@ -39,12 +42,23 @@ CREATE TABLE item_nfe (
 );
 
 SELECT * FROM departamento;
+SELECT descricao FROM departamento;
+
 SELECT * FROM funcionario;
+SELECT nome FROM funcionario;
+SELECT sexo FROM funcionario;
+SELECT nascimento FROM funcionario;
+SELECT salario FROM funcionario;
+
 SELECT * FROM produto;
+SELECT descricao FROM produto;
+
 SELECT * FROM nfe;
+SELECT emissao FROM nfe;
+
 SELECT * FROM item_nfe;
 
-INSERT INTO departamento (codigo, departamento) VALUES
+INSERT INTO departamento (codigo, descricao) VALUES
 (1, 'Vendas'),
 (2, 'Marketing'),
 (3, 'RH'),
@@ -153,17 +167,3 @@ INSERT INTO item_nfe (codigo, numero, quantidade) VALUES
 (18, 1018, 45),
 (19, 1019, 50),
 (20, 1020, 55);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
