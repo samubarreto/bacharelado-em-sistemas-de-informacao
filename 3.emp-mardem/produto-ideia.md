@@ -52,3 +52,5 @@
 * Bruno Marques Freitas
 * Caio Issao de Barros Fujisawa
 * Samuel Pereira Barreto
+
+mardem@univem.edu.br
