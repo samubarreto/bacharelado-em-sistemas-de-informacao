@@ -45,3 +45,10 @@
   * R
 
 ![1712019681224](image/produto-ideia/1712019681224.jpg)
+
+###### Grupo
+
+* Andrei Santos de Oliveira
+* Bruno Marques Freitas
+* Caio Issao de Barros Fujisawa
+* Samuel Pereira Barreto
