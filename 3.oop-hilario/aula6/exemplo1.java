@@ -1,4 +1,4 @@
-public class exemplo1 {
+public class Funcionario {
   class funcionario {
     String nome;
     double salario;
@@ -11,7 +11,7 @@ public class exemplo1 {
 
   public static void main(String[] args) {
     // Criando uma instância de funcionário (instância = objeto)
-    exemplo1.funcionario funcionarioSamuel = new exemplo1().new funcionario();
+    Funcionario.funcionario funcionarioSamuel = new Funcionario().new funcionario();
 
     // Definindo os atributos do funcionário
     funcionarioSamuel.nome = "Samuel";
