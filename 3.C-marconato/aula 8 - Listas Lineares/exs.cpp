@@ -111,6 +111,23 @@ void _ex5_inserirNosOrdenados(Lista *L, int v) {
 };
 */
 
+void removeUltimoNo(Lista *L) {
+    if (L == NULL) return;
+    if (L->prox == NULL) {
+        free(L);
+        L = NULL;
+        return;
+    }
+    Lista *ant = L;
+    Lista *atual = L->prox;
+    while (atual->prox != NULL) {
+        ant = atual;
+        atual = atual->prox;
+    }
+    free(atual);
+    ant->prox = NULL;
+}
+
 main() {
 	Lista *L = (Lista*) malloc(sizeof(Lista));
     L->info = 1;
@@ -128,6 +145,10 @@ main() {
     }
     
 	_ex2_insereVDps(L, 77, 2);
+    imprime(L);
+
+    removeUltimoNo(L);
+    printf("Lista após remover o último nó:\n");
     imprime(L);
     
     //_ex3_insereVAntes(L, 99, 3);
