@@ -1,9 +1,3 @@
-# 11/04/2024 - Aula 8
-
-* DML: Linguagem de Manipulação de Dados. Usada para manipular os dados dentro de um banco de dados. Exemplos incluem INSERT para adicionar novos dados, UPDATE para modificar dados existentes e DELETE para remover dados.
-* DQL: Linguagem de Consulta de Dados. Usada para recuperar dados de um banco de dados. Exemplos incluem SELECT, que é usado para consultar informações de uma ou mais tabelas.EX:
-
-```sql
 -- 1 -> Crie um banco de dados denominado ex05.
 CREATE DATABASE ex05;
 DROP DATABASE ex05;
@@ -36,4 +30,3 @@ ADD COLUMN salario DECIMAL(8,2);
 
 -- 5 -> Exclua a tabela funcionário.
 DROP TABLE funcionario;
-```
