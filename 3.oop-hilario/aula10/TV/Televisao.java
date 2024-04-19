@@ -26,8 +26,4 @@ public class Televisao {
   public int GetCanalTV() {
     return this.CanalTV;
   }
-
-  public static void main(String[] args) {
-
-  }
 }
