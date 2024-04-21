@@ -1,5 +1,7 @@
 /*
 
+Samuel 638217
+
 •Considerando o arquivo desenvolvido de listas duplamente encadeadas, faca as declaracoes adequadas, e crie as seguintes funcoes para listas circulares:
 a)Criar lista vazia;
 b)Inserir no Inicio da Lista;
@@ -85,7 +87,7 @@ void Imprime(Lista *Inicio)
 int Rem_Inicio(Lista **Inicio)
 {
 	if (*Inicio == NULL)
-		return 0; // Lista vazia
+		return 0;
 
 	Lista *temp = *Inicio;
 	Lista *ultimo = *Inicio;
@@ -102,7 +104,7 @@ int Rem_Inicio(Lista **Inicio)
 int Rem_Fim(Lista **Inicio)
 {
 	if (*Inicio == NULL)
-		return 0; // Lista vazia
+		return 0;
 
 	Lista *temp = *Inicio;
 	Lista *ant = NULL;

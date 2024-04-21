@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    Aula7 - Introd. Front
+  </title>
+  <!-- <link rel="stylesheet" href="aula7.css"> -->
+
+  <style>
+    body {
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      font-family: monospace, Arial;
+      font-weight: 400;
+      box-sizing: border-box;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+    }
+
+    section {
+      display: none;
+    }
+
+    section:target {
+      display: block;
+    }
+
+    header,
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+    }
+
+    nav ul {
+      text-decoration: none;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    main {
+      background-color: #E5E5E5;
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+    }
+
+    aside,
+    section {
+      padding: 20px;
+    }
+
+    aside {
+      background-color: #F4F4F4;
+    }
+
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    main aside ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    main aside ul li {
+      list-style-type: none;
+      padding: 8px 3px;
+    }
+
+    main aside ul li:hover {
+      cursor: pointer;
+      background-color: #d9d9d9;
+    }
+
+    footer {
+      text-align: center;
+      clear: both;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      padding: 0;
+      margin: 0;
+    }
+
+    .project-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      gap: 20px;
+      background-color: #fff;
+      padding: 10px;
+      border-radius: 10px;
+      border: solid #cdcdcd 1px;
+    }
+
+    .project-img {
+      border-radius: 10px;
+      transition: all 0.15s;
+      cursor: pointer;
+    }
+
+    .project-img:hover,
+    .about-button:hover {
+      transform: translateY(-3.5px);
+      box-shadow: #ababab 0 5px 0;
+      transition: all 0.15s;
+    }
+
+    .about-button {
+      color: white;
+      background-color: #222222;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-family: monospace, Arial, Helvetica, sans-serif;
+      font-weight: 600;
+      transition: all 0.15s;
+      cursor: pointer;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <h1>Aula 8 - Introdução ao Front (20/04/2024)</h1>
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <aside>
+      <h2>Meus projetos</h2>
+      <ul>
+        <a href="#proj1">
+          <li>Autikids</li>
+        </a>
+        <a href="#proj2">
+          <li>Doletas</li>
+        </a>
+        <a href="#proj3">
+          <li>JS-Calculator</li>
+        </a>
+        <a href="#proj4">
+          <li>Meu Portfólio</li>
+        </a>
+      </ul>
+    </aside>
+
+    <section id="proj1">
+      <h2>Projeto Autikids</h2>
+      <div class="project-container">
+        <div class="img-container">
+          <img class="project-img" src="https://samubarreto.github.io/Portfolio/source/projects/autikids-img.jpg"
+            width="500px">
+        </div>
+        <div class="project-desc">
+          <h3>Autikids: Um mundo colorido e inclusivo</h3>
+          <p class="project-desc-txt">
+            Aplicação Desktop de comunicação alternativa de alta tecnologia voltada a melhorar a comunicação da criança
+            portadora do espectro autista e sua inserção na sociedade. Feita em Python com as libs TKinter, Pygame e
+            sqlite3. Feita durante o primeiro período da faculdade na matéria de Projeto de Sistemas, as tecnologias
+            usadas
+            se devem às limitações de conhecimentos da minha parte e do meu grupo na
+            época, mas o software é totalmente funcional e me orgulho bastante dele.
+          </p>
+          <a href="https://www.youtube.com/watch?v=gwaOvcCb9-w&t=3s&ab_channel=Autikids" target="_blank">
+            <button class="about-button">
+              Saiba Mais
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="proj2">
+      <h2>Projeto Doletas</h2>
+      <div class="project-container">
+        <div class="img-container">
+          <img class="project-img" src="https://samubarreto.github.io/Portfolio/source/projects/doletas-img.jpg"
+            width="500px">
+        </div>
+        <div class="project-desc">
+          <h3>Doletas: Monitore o Real em tempo Real</h3>
+          <p class="project-desc-txt">
+            [EM DESENVOLVIMENTO] Doletas é uma aplicação web que permite monitorar e comparar em tempo real a
+            valorização do Real brasileiro. Pretendo desenvolver diversas funcionalidades pra ela ainda que usam a
+            integração com Api, vai ficar legal.. Tá tudo melhor descrito no README do repositório do projeto.
+          </p>
+          <a href="https://samubarreto.github.io/Doletas/" target="_blank">
+            <button class="about-button">
+              Saiba Mais
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="proj3">
+      <h2>Projeto JS-Calculator</h2>
+      <div class="project-container">
+        <div class="img-container">
+          <img class="project-img" src="https://samubarreto.github.io/Portfolio/source/projects/calculator-img.jpg"
+            width="500px">
+        </div>
+        <div class="project-desc">
+          <h3>JS-Calculator</h3>
+          <p class="project-desc-txt">
+            Calculadora web com dark/light mode, feita em HTML, CSS e JavaScript, usando eval(). Armazena o tema do
+            usuário no localStorage e detecta seus KeyDowns para escrever as operações, totalmente funcional e
+            resposiva.. Tem diversos problemas relacionados a operações usando números reais, será corrigido no futuro,
+            quando parar de usar o método built-in eval() e fazer os cálculos orientados a funções próprias.
+          </p>
+          <a href="https://samubarreto.github.io/js-calculator/" target="_blank">
+            <button class="about-button">
+              Saiba Mais
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="proj4">
+      <h2>Projeto Portfolio Web</h2>
+      <div class="project-container">
+        <div class="img-container">
+          <img class="project-img" src="https://samubarreto.github.io/Portfolio/source/projects/portfolio-img.jpg"
+            width="500px">
+        </div>
+        <div class="project-desc">
+          <h3>Meu Portfólio Web</h3>
+          <p class="project-desc-txt">
+            Portfólio desenvolvido com o objetivo de compartilhar meu perfil profissional e projetos com maior
+            facilidade. O código dele está todo disponível no meu Github.
+          </p>
+          <a href="https://samubarreto.github.io/Portfolio/" target="_blank">
+            <button class="about-button">
+              Saiba Mais
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Rodapé &copy; 2024</p>
+  </footer>
+
+</body>
+
+</html>
