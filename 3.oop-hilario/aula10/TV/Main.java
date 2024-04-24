@@ -3,7 +3,7 @@ public class Main {
     Televisao minhaTV = new Televisao(50, 1);
     ControleRemoto meuControle = new ControleRemoto(minhaTV);
 
-    meuControle.ConsultarVolume();
-    meuControle.ConsultarCanal();
+    System.out.println(meuControle.ConsultarVolume());
+    System.out.println(meuControle.ConsultarCanal());
   }
 }
