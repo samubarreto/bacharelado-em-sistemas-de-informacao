@@ -1,0 +1,76 @@
+public class Main {
+  public static void main(String[] args) {
+    Televisao minhaTV = new Televisao(50, 1);
+    ControleRemoto meuControle = new ControleRemoto(minhaTV);
+
+    System.out.println(meuControle.ConsultarVolume());
+    System.out.println(meuControle.ConsultarCanal());
+  }
+}
+
+class Televisao {
+
+  private int VolumeTV, CanalTV;
+
+  public Televisao(int _VolumeTV, int _CanalTV) {
+    SetVolumeTV(_VolumeTV);
+    SetCanalTV(_CanalTV);
+  }
+
+  public void SetVolumeTV(int NovoVolume) {
+    if (NovoVolume >= 1 && NovoVolume <= 100) {
+      VolumeTV = NovoVolume;
+    }
+  }
+
+  public void SetCanalTV(int NovoCanal) {
+    if (NovoCanal >= 1 && NovoCanal <= 50) {
+      CanalTV = NovoCanal;
+    }
+  }
+
+  public int GetVolumeTV() {
+    return this.VolumeTV;
+  }
+
+  public int GetCanalTV() {
+    return this.CanalTV;
+  }
+}
+
+class ControleRemoto {
+
+  private Televisao tv;
+
+  public ControleRemoto(Televisao tv) {
+    this.tv = tv;
+  }
+
+  public void DiminuirVolume1() {
+    tv.SetVolumeTV(tv.GetVolumeTV() - 1);
+  }
+
+  public void AumentarVolume1() {
+    tv.SetVolumeTV(tv.GetVolumeTV() + 1);
+  }
+
+  public void AumentarCanal1() {
+    tv.SetCanalTV(tv.GetCanalTV() + 1);
+  }
+
+  public void DiminuirCanal1() {
+    tv.SetCanalTV(tv.GetCanalTV() - 1);
+  }
+
+  public void TrocarCanal(int NovoCanal) {
+    tv.SetCanalTV(NovoCanal);
+  }
+
+  public int ConsultarVolume() {
+    return tv.GetVolumeTV();
+  }
+
+  public int ConsultarCanal() {
+    return tv.GetCanalTV();
+  }
+}
