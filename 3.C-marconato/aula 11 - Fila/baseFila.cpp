@@ -81,7 +81,7 @@ int tamanhoFila(Fila *MinhaFila) {
 	return total;
 }
 
-// Elabore uma função que esvazie uma fila recebida como parâmetro.
+// Elabore uma func que esvazie uma fila recebida como parametro.
 void esvaziarFila(Fila *MinhaFila) {
 	int rem;
 	while (!Vazia(MinhaFila)) {

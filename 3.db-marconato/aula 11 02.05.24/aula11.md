@@ -5,7 +5,6 @@
 * Terceira Forma Normal (3NF): Não há dependências transitivas entre atributos não-chave. Deve estar presente na segunda forma normal.
 * Quarta Forma Normal (4NF): Não pode conter mais de uma dependência multivalorada. Deve estar presente na terceira forma normal;
 * Quinta Forma Normal (5NF): O conteúdo não pode ser reconstituído por tabelas menores com chaves diferentes. Deve estar presente na quarta forma normal.
-  
 * Languages:
   * DDL: Linguagem de Definição de Dados. Usada para definir a estrutura e layout dos dados em um banco de dados. Exemplos incluem CREATE, ALTER e DROP para criar, alterar e excluir tabelas e outros objetos de banco de dados.
   * DML: Linguagem de Manipulação de Dados. Usada para manipular os dados dentro de um banco de dados. Exemplos incluem INSERT para adicionar novos dados, UPDATE para modificar dados existentes e DELETE para remover dados.
