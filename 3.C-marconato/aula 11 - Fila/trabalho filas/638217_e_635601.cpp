@@ -41,10 +41,6 @@ int estaVazia(Fila *fila) {
 // Insere um elemento na fila
 void enfileirar(Fila *fila, char *senha) {
   No *temp = (No*)malloc(sizeof(No));
-  if (temp == NULL) {
-    printf("\nErro: Mem�ria insuficiente!\n");
-    return;
-  }
   strcpy(temp->senha, senha);
   temp->prox = NULL;
   if (estaVazia(fila)) {
