@@ -24,16 +24,17 @@ ARVORE *CAPB(int N)
   return r;
 }
 
-ARVORE *BuscaNo(int noBuscado, ARVORE *R)
+void BuscaNo(int noBuscado, ARVORE *R)
 {
-  if (R == NULL || R->info == noBuscado)
-    return R;
-  
-  ARVORE *esquerda = BuscaNo(noBuscado, R->esq);
-  if (esquerda != NULL)
-    return esquerda;
-  
-  return BuscaNo(noBuscado, R->dir);
+  if (R != NULL || R->info != noBuscado)
+  {
+  	if (R -> info == noBuscado) {
+    if (R->esq != NULL)
+      printf("%i ", (R->esq)->info);
+    if (R->dir != NULL)
+      printf("%i ", (R->esq)->info);
+    }
+  }
 }
 
 void Imprime(ARVORE *R)
@@ -59,15 +60,7 @@ int main()
   
   printf("\n\nDigite um dos nos da arvore acima para buscar sua subarvore: ");
   scanf("%i",&noBuscado);
-  ResBusca = BuscaNo(noBuscado, Raiz);
-  
-  if (ResBusca != NULL) {
-    printf("\nSubarvore do no %d:", noBuscado);
-    Imprime(ResBusca);
-  } else {
-    printf("\nNo nao encontrado na arvore.");
-  }
-  
+  BuscaNo(noBuscado, Raiz);  
   return 0;
 }
 
