@@ -55,7 +55,7 @@ public class Filme {
     Filme filme1 = new Filme();
     filme1.setCodigoFilme(123456);
     filme1.setLancamentoFilme(1999);
-    filme1.setNomeFilme("À Espera de um Milagre");
+    filme1.setNomeFilme("A Espera de um Milagre");
     filme1.setCategoriaFilme("Drama");
     String[] nomesAtores = {
       "Tom Hanks", "Michael Clarke Duncan", "David Morse", "Bonnie Hunt", "James Cromwell", "Michael Jeter", "Graham Greene", "Doug Hutchison", "Sam Rockwell", "Barry Pepper"
@@ -63,8 +63,8 @@ public class Filme {
     filme1.setAtoresFilme(nomesAtores);
 
     System.out.println("Nome do Filme: " + filme1.getNomeFilme());
-    System.out.println("Código do Filme: " + filme1.getCodigoFilme());
-    System.out.println("Ano de Lançamento: " + filme1.getLancamentoFilme());
+    System.out.println("Codigo do Filme: " + filme1.getCodigoFilme());
+    System.out.println("Ano de Lancamento: " + filme1.getLancamentoFilme());
     System.out.println("Categoria do Filme: " + filme1.getCategoriaFilme());
     System.out.println("Atores do Filme:");
     String[] atoresDoFilme = filme1.getAtoresFilme();
