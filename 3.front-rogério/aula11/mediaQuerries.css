@@ -1,0 +1,44 @@
+* {
+  font-family: monospace;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  /* quebra linha caso não haja espaço suficiente na linha */
+  padding: 10px;
+  justify-content: space-around;
+}
+
+.box {
+  height: 100dvh;
+  width: 100dvw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 10px 0;
+  color: white;
+  font-size: 1.2rem;
+  background-color: gray;
+}
+
+/* Mídia para resoluções até 767px */
+@media (max-width: 767px) {
+  body {
+    background-color: red;
+  }
+}
+
+/* Mídia para resoluções de 768px até 1366px */
+@media (min-width: 768px) and (max-width: 1366px) {
+  body {
+    background-color: blue;
+  }
+}
+
+/* Mídia para resoluções a partir de 1367px */
+@media (min-width: 1367px) {
+  body {
+    background-color: green;
+  }
+}
