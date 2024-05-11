@@ -11,13 +11,13 @@
 }
 
 .box {
-  height: 100dvh;
+  height: 100px;
   width: 100dvw;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 0 10px 0;
-  color: white;
+  color: black;
   font-size: 1.2rem;
   background-color: gray;
 }
@@ -27,6 +27,11 @@
   body {
     background-color: red;
   }
+
+  .box {
+    width: 90%;
+    background-color: lightblue;
+  }
 }
 
 /* Mídia para resoluções de 768px até 1366px */
@@ -34,11 +39,21 @@
   body {
     background-color: blue;
   }
+
+  .box {
+    width: 48%;
+    background-color: lightblue;
+  }
 }
 
 /* Mídia para resoluções a partir de 1367px */
 @media (min-width: 1367px) {
   body {
     background-color: green;
+  }
+
+  .box {
+    width: 22%;
+    background-color: lightblue;
   }
 }
