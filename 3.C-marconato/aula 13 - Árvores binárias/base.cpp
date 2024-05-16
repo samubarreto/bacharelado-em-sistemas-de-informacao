@@ -118,7 +118,7 @@ no_arvore *Busca (ARVORE*R, int v)
 		return Busca(R->esq, v);
 		return Busca(R->dir, v);
 	}
-}
+}	
 
 main()
 {
