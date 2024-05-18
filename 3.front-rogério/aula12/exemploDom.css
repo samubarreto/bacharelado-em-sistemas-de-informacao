@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+  color: #fff;
+}
+
+body {
+  background-color: #222222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100dvh;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 50%;
+  background-color: #353535;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+button,
+input,
+img {
+  background-color: #000;
+  border: none;
+  padding: 5px 6px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+input {
+  cursor: text;
+}
