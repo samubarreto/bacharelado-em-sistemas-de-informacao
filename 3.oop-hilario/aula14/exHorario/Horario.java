@@ -1,6 +1,10 @@
 package exHorario;
 
 public class Horario implements MeuHorario {
+  private int hora;
+  private int minuto;
+  private int segundo;
+
   @Override
   public int getHora() {
     return this.hora;
@@ -32,7 +36,7 @@ public class Horario implements MeuHorario {
   }
 
   @Override
-  public String toString(int hora, int minuto, int segundo) {
-    return hora + ":" + minuto + ":" + segundo;
+  public String toString() {
+    return this.hora + ":" + this.minuto + ":" + this.segundo;
   }
 }

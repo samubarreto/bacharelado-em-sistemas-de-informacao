@@ -13,6 +13,5 @@ interface MeuHorario {
 
   void setSegundo(int segundo);
 
-  @Override
   String toString();
 }

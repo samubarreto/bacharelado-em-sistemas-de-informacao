@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>aula 12 IFELSE</title>
+  <link rel="stylesheet" href="exemploIFELSE.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <button id="visible-button">Sumir (quase) TUDO :O</button>
+  </div>
+
+  <div class="container" id="divSumir">
+    <div class="wrapper">
+      <p id="demo">Texto original</p>
+      <button onclick="mudarTexto()">Mudar texto</button>
+    </div>
+
+    <div class="wrapper">
+      <input type="text" id="nome" name="nome">
+      <button onclick="mudarInput()">Mudar input</button>
+    </div>
+
+    <div class="wrapper">
+      <p id="meuTexto">Mudando a Cor do Texto</p>
+      <button onclick="mudarCor()">Mudar cor</button>
+    </div>
+
+    <div class="wrapper">
+      <p id="shownTxt">Texto aparece e some :O</p>
+      <button onclick="hideTxt()">Esconder Texto :O</button>
+      <button onclick="showTxt()">Mostrar Texto :O</button>
+    </div>
+
+    <div class="wrapper">
+      <input type="text" id="inputTeclado" placeholder="Digite algo e pressione enter" style="width: 100%;">
+    </div>
+
+    <div class="wrapper column">
+      <a id="linkAlterar" href="https://samubarreto.github.io/js-calculator/">
+        <img src="https://samubarreto.github.io/Portfolio/source/projects/calculator-img.jpg" width="100%"
+          id="imgAlterar">
+      </a>
+      <div class="wrapper">
+        <button onclick="changeImg()">Trocar Imagem :O</button>
+      </div>
+    </div>
+  </div>
+
+  <a href="https://github.com/samubarreto?tab=repositories" target="_blank">
+    <button class="cool-txt credits">
+      @samubarreto
+    </button>
+  </a>
+
+  <script src="exemploIFELSE.js"></script>
+</body>
+
+</html>

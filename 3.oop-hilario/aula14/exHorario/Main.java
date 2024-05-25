@@ -6,6 +6,6 @@ public class Main {
     h.setHora(22);
     h.setMinuto(13);
     h.setSegundo(55);
-    h.toString(h);
+    System.out.println(h.toString());
   }
 }

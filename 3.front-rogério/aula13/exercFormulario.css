@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+  color: #fff;
+}
+
+form {
+  width: 30%;
+  background-color: #555555;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+body {
+  background-color: #222222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100dvh;
+  padding: 100px 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  background-color: #222222;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 20px;
+  transition: all .3s;
+}
+
+.wrapper:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 2px 0 #fff;
+  transition: all .15s;
+}
+
+.column {
+  flex-direction: column;
+}
+
+button,
+input,
+img,
+select {
+  text-align: center;
+  width: 100%;
+  background-color: #353535;
+  border: none;
+  padding: 5px 6px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+button,
+label {
+  text-wrap: nowrap;
+}
+
+a {
+  object-fit: cover;
+}
+
+input {
+  cursor: text;
+}
+
+.cool-txt {
+  text-wrap: nowrap;
+  background-image: -webkit-linear-gradient(to right, #c4ffc4, #9bec9b, #4cfd52, #4cfd52, #4cfd52, #9bec9b, #c4ffc4);
+  background-image: linear-gradient(to right, #c4ffc4, #9bec9b, #4cfd52, #4cfd52, #4cfd52, #9bec9b, #c4ffc4);
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  transition: all 0.25s;
+}
+
+.gradient-animation {
+  animation: gradientAnimation 4s linear infinite;
+}
+
+.credits {
+  margin-top: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 5px 12px;
+  animation: startDown 1s ease-in-out, gradientAnimation 4s linear infinite;
+  box-shadow: rgba(76, 253, 82, .4) 1px 1px 1px;
+  transition: all 0.25s;
+}
+
+input[type=submit] {
+  transition: all 0.25s;
+}
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0%;
+  }
+
+  100% {
+    background-position: 200%;
+  }
+}
+
+.cool-txt.credits:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.cool-txt.credits:active,
+input[type=submit]:active {
+  transform: scale(.9);
+}
