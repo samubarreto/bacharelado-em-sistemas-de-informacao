@@ -2,7 +2,7 @@
 -- -----------------------------------------------------
 -- Schema trabfinal
 -- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS trabfinal DEFAULT CHARACTER SET utf8 ;
+CREATE SCHEMA IF NOT EXISTS trabfinal ;
 USE trabfinal ;
 
 -- -----------------------------------------------------
