@@ -50,12 +50,13 @@ void Imprime(Lista *Inicio)
 	printf("NULL \n");
 }
 
-int Rem_Impar(Lista **Inicio, Lista **Fim)
+int Rem_Impar(no **Inicio, no **Fim)
 {
-	Lista *p;
+	no *p;
 	if (*Inicio != NULL)
 	{
 		p = *Inicio;
+		if p
 		*Inicio = p->prox;
 		if (p == *Fim)
 			*Fim = NULL;
